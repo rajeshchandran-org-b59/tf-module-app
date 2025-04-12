@@ -24,7 +24,7 @@ resource "null_resource" "main" {
   provisioner "remote-exec" {
     inline = [
       "sleep 10",
-      "ansible-pull -U https://github.com/B59-CloudDevOps/learn-ansible.git -e env=${var.env} -e component=${var.name} -e token=${var.token} expense-pull.yaml"
+      "ansible-pull -U https://github.com/rajeshchandran-org-b59/ansible.git -e env=${var.env} -e component=${var.name} -e token=${var.token} expense-pull.yaml"
     ]
   }
 }

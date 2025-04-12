@@ -1,5 +1,5 @@
 data "aws_route53_zone" "main" {
-  name         = "clouding-app.shop"
+  name         = "rajeshapps.site"
   private_zone = false
 }
 
@@ -18,7 +18,7 @@ data "aws_ami" "main" {
 
   owners = ["self"]
   tags = {
-    Name = "b59-learning-ami-with-ansible"
+    Name = "b59-LabImage-Rajesh"
   }
 }
 
